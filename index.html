@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>審計筆記簿｜Audit Notes Ledger</title>
+  <meta name="description" content="用固定七段格式整理的審計學學習筆記。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+TC:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-root=".">
+  <main class="wide">
+    <section class="hero">
+      <div class="eyebrow">AUDITING · STUDY LEDGER</div>
+      <h1>把審計觀念，<br>一筆一筆記清楚。</h1>
+      <p>每一則筆記都用同一套七段格式：先講一句話重點，再拆概念、架構、例子、常見混淆，最後用題目檢查自己。</p>
+    </section>
+
+    <section id="ledger" aria-label="筆記目錄">
+      <div class="filters" id="tag-filters" aria-label="依標籤篩選"></div>
+      <table class="ledger">
+        <thead>
+          <tr><th>編號</th><th>日期</th><th>摘要</th><th>分類</th></tr>
+        </thead>
+        <tbody id="ledger-body"></tbody>
+      </table>
+      <noscript><p>請開啟 JavaScript 以顯示筆記目錄。</p></noscript>
+    </section>
+
+    <section class="about" id="about">
+      <h2>關於這本筆記簿</h2>
+      <p>這是會計研究所審計學的個人學習筆記網站。整個專案依照根目錄的 <code>CLAUDE.md</code> 維護：AI 讀完那份文件，就能用相同的格式、命名與風格繼續新增筆記。</p>
+      <p>每則筆記固定七段：</p>
+      <ol>
+        <li>一句話重點</li>
+        <li>核心概念</li>
+        <li>架構或公式</li>
+        <li>例子</li>
+        <li>常見混淆</li>
+        <li>自我檢查</li>
+        <li>準則依據</li>
+      </ol>
+    </section>
+  </main>
+
+  <script src="assets/notes.js"></script>
+  <script src="assets/site.js"></script>
+</body>
+</html>
