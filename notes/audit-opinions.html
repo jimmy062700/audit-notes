@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>查核意見的類型｜審計筆記簿</title>
+  <meta name="description" content="用「問題性質 × 是否廣泛」兩個問題，判斷保留、否定或無法表示意見。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+TC:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-root=".." data-slug="audit-opinions">
+  <main>
+    <header class="note-head">
+      <div class="note-meta" id="note-meta"></div>
+      <h1>查核意見的類型</h1>
+    </header>
+
+    <article class="note">
+      <section>
+        <h2>一句話重點</h2>
+        <p class="key">查核意見分為無保留意見與三種修正式意見。要出哪一種修正式意見，只需回答兩個問題：是「報表有錯」還是「查不到」？影響是否廣泛？</p>
+      </section>
+
+      <section>
+        <h2>核心概念</h2>
+        <p><strong>無保留意見</strong>：查核人員認為財務報表在所有重大方面係依照適用之財務報導架構編製。</p>
+        <p><strong>修正式意見</strong>有三種：</p>
+        <ul>
+          <li><strong>保留意見</strong>：問題重大，但影響並非廣泛。</li>
+          <li><strong>否定意見</strong>：已取得足夠及適切的證據，認定不實表達重大且廣泛。</li>
+          <li><strong>無法表示意見</strong>：無法取得足夠及適切的查核證據，且可能的影響重大且廣泛。</li>
+        </ul>
+        <p><strong>廣泛</strong>大致指：影響不侷限於特定項目；或雖侷限但占財務報表的主要部分；或涉及對使用者了解財務報表極為重要的揭露。</p>
+      </section>
+
+      <section>
+        <h2>架構或公式</h2>
+        <div class="table-wrap">
+          <table>
+            <tr><th>問題性質</th><th>重大但不廣泛</th><th>重大且廣泛</th></tr>
+            <tr><td>財務報表存有重大不實表達</td><td>保留意見</td><td>否定意見</td></tr>
+            <tr><td>無法取得足夠及適切之查核證據</td><td>保留意見</td><td>無法表示意見</td></tr>
+          </table>
+        </div>
+        <p>判斷順序：先確定問題是否重大 → 分辨性質（有錯／查不到）→ 判斷是否廣泛。</p>
+      </section>
+
+      <section>
+        <h2>例子</h2>
+        <p>以下皆為假設情境：</p>
+        <ul>
+          <li>公司未對一筆重大的存貨提列跌價損失，其餘項目無誤 → 有錯、重大但不廣泛 → <strong>保留意見</strong>。</li>
+          <li>公司應編製合併報表卻未將重要子公司納入，影響報表多數項目 → 有錯、重大且廣泛 → <strong>否定意見</strong>。</li>
+          <li>查核人員受委任時已過年底，無法觀察一處倉庫的重大存貨盤點，也無法以替代程序取得證據，其餘項目無虞 → 查不到、重大但不廣泛 → <strong>保留意見</strong>。</li>
+          <li>公司會計紀錄因火災大部分毀損，無法執行查核 → 查不到、重大且廣泛 → <strong>無法表示意見</strong>。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>常見混淆</h2>
+        <ul>
+          <li><strong>強調事項段、其他事項段不是修正式意見</strong>：它們只是提醒使用者注意，查核意見本身不因此修正。</li>
+          <li><strong>關鍵查核事項不能取代修正式意見</strong>：該出保留或否定意見的情況，不能改用關鍵查核事項溝通。</li>
+          <li>繼續經營存在重大不確定性，但財務報表已適當揭露時，意見仍為無保留，另以「繼續經營有關之重大不確定性」段落說明。</li>
+          <li>否定意見與無法表示意見的差別在「有沒有證據」：前者是查到了、確定有錯；後者是查不到、無從判斷。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>自我檢查</h2>
+        <details>
+          <summary>管理階層限制查核人員函證重大應收帳款，且無替代程序可執行，但影響僅限該科目。應出具哪種意見？</summary>
+          <p>保留意見。屬於無法取得足夠及適切之查核證據，可能影響重大但不廣泛。</p>
+        </details>
+        <details>
+          <summary>查核報告加了強調事項段，代表這份報告是修正式意見嗎？</summary>
+          <p>不是。強調事項段不影響查核意見的類型。</p>
+        </details>
+        <details>
+          <summary>「重大且廣泛的不實表達」與「重大且廣泛的範圍限制」分別對應哪種意見？</summary>
+          <p>前者為否定意見，後者為無法表示意見。</p>
+        </details>
+      </section>
+
+      <section>
+        <h2>準則依據</h2>
+        <ul>
+          <li>ISA 700／審計準則 700 號：財務報表查核報告</li>
+          <li>ISA 705／審計準則 705 號：修正式意見之查核報告</li>
+          <li>ISA 706／審計準則 706 號：強調事項段及其他事項段</li>
+          <li>ISA 701／審計準則 701 號：關鍵查核事項之溝通</li>
+          <li>ISA 570／審計準則 570 號：繼續經營</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <script src="../assets/notes.js"></script>
+  <script src="../assets/site.js"></script>
+</body>
+</html>
