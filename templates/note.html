@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 【改】標題｜審計筆記簿 -->
+  <title>筆記標題｜審計筆記簿</title>
+  <!-- 【改】與 notes.js 的 summary 相同 -->
+  <meta name="description" content="一句話摘要">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+TC:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<!-- 【改】data-slug 必須等於檔名（不含 .html）與 notes.js 的 slug -->
+<body data-root=".." data-slug="your-slug">
+  <main>
+    <header class="note-head">
+      <div class="note-meta" id="note-meta"></div>
+      <!-- 【改】與 notes.js 的 title 完全相同 -->
+      <h1>筆記標題</h1>
+    </header>
+
+    <!-- 以下七個 section 的順序與 h2 文字固定，不可增刪或改名 -->
+    <article class="note">
+      <section>
+        <h2>一句話重點</h2>
+        <p class="key">用一到兩句話講完這個觀念。</p>
+      </section>
+
+      <section>
+        <h2>核心概念</h2>
+        <p>定義與組成要素。專有名詞第一次出現時用 <strong>粗體</strong>。</p>
+      </section>
+
+      <section>
+        <h2>架構或公式</h2>
+        <!-- 公式用 .formula；比較或判斷矩陣用表格（外層包 .table-wrap） -->
+        <div class="formula">A ＝ B × C</div>
+      </section>
+
+      <section>
+        <h2>例子</h2>
+        <p>例子中的數字一律註明「假設」，並把計算過程寫出來。</p>
+      </section>
+
+      <section>
+        <h2>常見混淆</h2>
+        <ul>
+          <li>至少兩點容易搞錯的地方。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>自我檢查</h2>
+        <!-- 2–3 題，答案收在 details 內 -->
+        <details>
+          <summary>題目？</summary>
+          <p>答案。</p>
+        </details>
+      </section>
+
+      <section>
+        <h2>準則依據</h2>
+        <ul>
+          <li>ISA xxx／審計準則 xxx 號：準則名稱</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <script src="../assets/notes.js"></script>
+  <script src="../assets/site.js"></script>
+</body>
+</html>
