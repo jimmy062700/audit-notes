@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>審計風險模型｜審計筆記簿</title>
+  <meta name="description" content="審計風險＝重大不實表達風險 × 偵查風險；查核人員能控制的只有偵查風險。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+TC:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-root=".." data-slug="audit-risk-model">
+  <main>
+    <header class="note-head">
+      <div class="note-meta" id="note-meta"></div>
+      <h1>審計風險模型</h1>
+    </header>
+
+    <article class="note">
+      <section>
+        <h2>一句話重點</h2>
+        <p class="key">審計風險＝重大不實表達風險 × 偵查風險。前者是受查者身上的風險，查核人員只能評估；後者才是查核人員能靠查核程序控制的部分。</p>
+      </section>
+
+      <section>
+        <h2>核心概念</h2>
+        <p><strong>審計風險</strong>：財務報表存有重大不實表達，但查核人員卻表示了不適當查核意見的風險。</p>
+        <p><strong>重大不實表達風險</strong>：查核前財務報表就已經存有重大不實表達的風險，在個別項目聲明層級由兩部分組成：</p>
+        <ul>
+          <li><strong>固有風險</strong>：在考量相關控制之前，某項聲明本身容易發生重大不實表達的可能性。</li>
+          <li><strong>控制風險</strong>：不實表達未能被受查者的內部控制及時預防，或偵出並改正的風險。</li>
+        </ul>
+        <p><strong>偵查風險</strong>：查核人員執行查核程序後，仍未能偵出重大不實表達的風險。</p>
+      </section>
+
+      <section>
+        <h2>架構或公式</h2>
+        <div class="formula">審計風險 ＝ 重大不實表達風險 × 偵查風險<br>重大不實表達風險 ＝ 固有風險 × 控制風險</div>
+        <div class="table-wrap">
+          <table>
+            <tr><th>風險</th><th>存在於</th><th>查核人員的角色</th></tr>
+            <tr><td>固有風險</td><td>受查者</td><td>評估</td></tr>
+            <tr><td>控制風險</td><td>受查者</td><td>評估</td></tr>
+            <tr><td>偵查風險</td><td>查核工作</td><td>透過查核程序的性質、時間及範圍加以控制</td></tr>
+          </table>
+        </div>
+        <p>推論方向：先決定可接受的審計風險，再評估重大不實表達風險，最後倒推出「可接受的偵查風險」，據以設計查核程序。</p>
+      </section>
+
+      <section>
+        <h2>例子</h2>
+        <p>假設可接受的審計風險為 5%，評估固有風險為 80%、控制風險為 50%：</p>
+        <div class="formula">可接受偵查風險 ＝ 5% ÷（80% × 50%）＝ 12.5%</div>
+        <p>若決定不信賴內部控制，把控制風險設為 100%：</p>
+        <div class="formula">可接受偵查風險 ＝ 5% ÷（80% × 100%）＝ 6.25%</div>
+        <p>可接受的偵查風險從 12.5% 降到 6.25%，代表必須取得更多、更有說服力的查核證據。</p>
+      </section>
+
+      <section>
+        <h2>常見混淆</h2>
+        <ul>
+          <li><strong>偵查風險與證據量是反向關係</strong>：可接受的偵查風險越低，需要的查核證據越多。</li>
+          <li>查核人員<strong>不能降低</strong>固有風險與控制風險，只能評估它們；能調整的只有偵查風險。</li>
+          <li>模型是幫助思考的概念工具，實務上多以高、中、低等級判斷，不是精確的數學計算。</li>
+          <li>偵查風險不可能降到零，因為查核採抽樣、證據多為說服性而非結論性。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>自我檢查</h2>
+        <details>
+          <summary>評估的重大不實表達風險升高時，可接受的偵查風險應如何變動？</summary>
+          <p>應降低。在審計風險水準不變下，兩者呈反向關係，因此要執行更多或更有效的證實程序。</p>
+        </details>
+        <details>
+          <summary>假設可接受審計風險 5%、固有風險 50%、控制風險 40%，可接受偵查風險是多少？</summary>
+          <p>5% ÷（50% × 40%）＝ 25%。</p>
+        </details>
+        <details>
+          <summary>哪一個風險是查核人員可以直接控制的？為什麼？</summary>
+          <p>偵查風險。它取決於查核程序的性質、時間及範圍，以及執行的品質；固有風險與控制風險則是受查者本身的狀況。</p>
+        </details>
+      </section>
+
+      <section>
+        <h2>準則依據</h2>
+        <ul>
+          <li>ISA 200／審計準則 200 號：查核財務報表之整體目的（審計風險及其組成要素的定義）</li>
+          <li>ISA 315／審計準則 315 號：辨認並評估重大不實表達風險</li>
+          <li>ISA 330／審計準則 330 號：查核人員對所評估風險之因應</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <script src="../assets/notes.js"></script>
+  <script src="../assets/site.js"></script>
+</body>
+</html>
