@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>重大性｜審計筆記簿</title>
+  <meta name="description" content="整體重大性、執行重大性與明顯微小門檻，各自管什麼、怎麼訂。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+TC:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-root=".." data-slug="materiality">
+  <main>
+    <header class="note-head">
+      <div class="note-meta" id="note-meta"></div>
+      <h1>重大性</h1>
+    </header>
+
+    <article class="note">
+      <section>
+        <h2>一句話重點</h2>
+        <p class="key">重大性是「錯多少才會影響報表使用者決策」的門檻。查核時不只訂一個數字，而是整體重大性、執行重大性、明顯微小門檻三層一起用。</p>
+      </section>
+
+      <section>
+        <h2>核心概念</h2>
+        <p>不實表達（包含遺漏）如果個別或彙總起來，可合理預期將影響使用者依財務報表所作的經濟決策，就是<strong>重大</strong>。重大性的決定屬於專業判斷。</p>
+        <ul>
+          <li><strong>整體重大性</strong>：針對財務報表整體所訂的重大性，用來規劃查核並評估不實表達的影響。</li>
+          <li><strong>執行重大性</strong>：訂得比整體重大性低的金額，目的是把「未更正及未偵出不實表達的彙總數超過整體重大性」的可能性降到適當的低水準。</li>
+          <li><strong>明顯微小門檻</strong>：低於此金額的不實表達可以不必累計，因為即使彙總也明顯不會有重大影響。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>架構或公式</h2>
+        <div class="formula">整體重大性 ＝ 所選基準 × 百分比<br>執行重大性 ＜ 整體重大性<br>明顯微小門檻 ≪ 執行重大性</div>
+        <div class="table-wrap">
+          <table>
+            <tr><th>層次</th><th>用途</th></tr>
+            <tr><td>整體重大性</td><td>規劃查核範圍；最後評估未更正不實表達是否重大</td></tr>
+            <tr><td>執行重大性</td><td>評估重大不實表達風險；決定進一步查核程序的性質、時間及範圍</td></tr>
+            <tr><td>明顯微小門檻</td><td>決定哪些不實表達需要累計</td></tr>
+          </table>
+        </div>
+        <p>常見基準包括稅前淨利、營業收入、總資產、權益等，依受查者的性質與使用者關注的重點選擇。</p>
+      </section>
+
+      <section>
+        <h2>例子</h2>
+        <p>假設某製造業公司稅前淨利為 2 億元，查核人員以稅前淨利的 5% 作為整體重大性，執行重大性取整體重大性的 75%，明顯微小門檻取整體重大性的 5%：</p>
+        <div class="table-wrap">
+          <table>
+            <tr><th>層次</th><th>計算</th><th>金額</th></tr>
+            <tr><td>整體重大性</td><td class="num">200,000,000 × 5%</td><td class="num">10,000,000</td></tr>
+            <tr><td>執行重大性</td><td class="num">10,000,000 × 75%</td><td class="num">7,500,000</td></tr>
+            <tr><td>明顯微小門檻</td><td class="num">10,000,000 × 5%</td><td class="num">500,000</td></tr>
+          </table>
+        </div>
+        <p>以上百分比皆為假設數字。準則沒有規定固定比率，75% 與 5% 是練習用的設定，實際由查核人員判斷。</p>
+      </section>
+
+      <section>
+        <h2>常見混淆</h2>
+        <ul>
+          <li><strong>重大性不只看金額</strong>：金額小但性質特殊的不實表達（例如涉及舞弊、使虧損轉為獲利）仍可能重大。</li>
+          <li>執行重大性不是另一個「可容忍的錯誤總額」，而是為了替未偵出的不實表達預留緩衝。</li>
+          <li>重大性不是訂了就不動：查核過程中若取得新資訊（例如實際損益與預估差異很大），應予修正。</li>
+          <li>重大性訂得越低，需要的查核證據越多。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>自我檢查</h2>
+        <details>
+          <summary>為什麼執行重大性要低於整體重大性？</summary>
+          <p>因為個別不重大的不實表達彙總後可能重大，而且可能還有未偵出的不實表達；訂低一點可以降低彙總數超過整體重大性的可能性。</p>
+        </details>
+        <details>
+          <summary>假設整體重大性為 800 萬元，執行重大性取 70%，金額是多少？</summary>
+          <p>800 萬 × 70% ＝ 560 萬元。</p>
+        </details>
+        <details>
+          <summary>一筆金額低於整體重大性的不實表達，一定不重大嗎？</summary>
+          <p>不一定。還要考量性質（質性因素），以及與其他不實表達彙總後的影響。</p>
+        </details>
+      </section>
+
+      <section>
+        <h2>準則依據</h2>
+        <ul>
+          <li>ISA 320／審計準則 320 號：查核規劃及執行之重大性</li>
+          <li>ISA 450／審計準則 450 號：查核過程中所辨認不實表達之評估</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <script src="../assets/notes.js"></script>
+  <script src="../assets/site.js"></script>
+</body>
+</html>
